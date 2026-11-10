@@ -6,6 +6,9 @@
 > **Reactive Smart Contract:** [`contracts/OmniPulseReactiveSentinel.sol`](contracts/OmniPulseReactiveSentinel.sol)  
 > **Destination Callback Vault:** [`contracts/OmniPulseCallbackVault.sol`](contracts/OmniPulseCallbackVault.sol)
 
+> [!NOTE]
+> **Implementation & Deployment Status:** This repository is an architectural prototype and deterministic local simulation designed for Reactive Network (Lasna / Kopli Testnet), Unichain Sepolia (`1301`), and Base Sepolia (`84532`). The Solidity contracts are **not yet deployed to live testnets** (no live contract addresses or broadcast transactions yet), and the GitHub Pages web dashboard runs an offline client-side simulation rather than live RPC calls.
+
 ---
 
 ## 1. Problem Statement
@@ -35,7 +38,7 @@ flowchart LR
     2. **Cross-Chain Spread Divergence (`ACTION_CROSS_CHAIN_HEDGE = 2`):** Unichain vs Base spread $\ge 120$ bps.
     3. **AI Manipulation Alert (`ACTION_CIRCUIT_BREAKER_PAUSE = 3`):** Composite AI risk score $\ge 8,000$ bps (`80%` manipulation probability), isolating vaults on both chains simultaneously.
 - **`contracts/OmniPulseCallbackVault.sol`:**
-  - Deployed on **Unichain Sepolia (`1301`)** and **Base Sepolia (`84532`)**, verifying the injected `_rvmId` and executing atomic collateral unwinds, delta-neutral hedging, or emergency circuit-breaker pauses.
+  - Designed for destination deployment on **Unichain Sepolia (`1301`)** and **Base Sepolia (`84532`)** (currently verified in local simulation; not yet deployed on-chain), verifying the injected `_rvmId` and modeling atomic collateral unwinds, delta-neutral hedging, or emergency circuit-breaker pauses.
 
 ---
 

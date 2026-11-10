@@ -11,7 +11,7 @@
   `OmniPulse: Reactive Smart Contract + AI DeFi Circuit-Breaker & Cross-Chain Automation Engine`
 
 - **One-Line Elevator Pitch:**  
-  `Inversion-of-Control Reactive Smart Contract (RSC) + AI Risk Copilot on Lasna Testnet that monitors Unichain (1301) & Base (84532) DEX events and dispatches <1s autonomous stop-loss, hedge & circuit-breaker callbacks.`
+  `Inversion-of-Control Reactive Smart Contract (RSC) + AI Risk Copilot prototype designed for Lasna Testnet, Unichain (1301) & Base (84532) — verified via deterministic local simulation (testnet deployment pending).`
 
 - **GitHub Repository URL:**  
   `https://github.com/jeffrey-graham/reactive-omni-ai-sentinel`
